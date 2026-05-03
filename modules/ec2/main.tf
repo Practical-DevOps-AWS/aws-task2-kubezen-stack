@@ -14,7 +14,11 @@ resource "aws_instance" "my_Amazon_Linux" {
   ami                    = data.aws_ami.latest_amazon_linux.id
   instance_type          = var.instance_type
   subnet_id              = var.subnet_id
+<<<<<<< HEAD
   vpc_security_group_ids = [var.vpc_security_group_ids.id]
+=======
+  vpc_security_group_ids = var.vpc_security_group_ids.*.id
+>>>>>>> parent of 1e5842c (feat(terraform): configure terraform)
 
   user_data = file("./modules/ec2/install_apache.sh")
 
