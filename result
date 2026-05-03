@@ -1,10 +1,12 @@
-<<<<<<< HEAD
-[33m╷[0m[0m
-[33m│[0m [0m[1m[33mWarning: [0m[0m[1mNo outputs found[0m
-[33m│[0m [0m
-[33m│[0m [0m[0mThe state file either has no outputs defined, or all the defined outputs are empty. Please define an output in your configuration with the `output`
-[33m│[0m [0mkeyword and run `terraform refresh` for it to become available. If you are using interpolation, please verify the interpolated value is not empty.
-[33m│[0m [0mYou can use the `terraform console` command to assist.
-[33m╵[0m[0m
-=======
->>>>>>> parent of 1e5842c (feat(terraform): configure terraform)
+ec2_ami = "ami-0383c71659e86d147"
+ec2_public_ip = [
+  "3.122.253.234",
+]
+ec2_type = [
+  "t2.micro",
+]
+security_group_ids = [
+  "sg-0fde823927b6b903e",
+]
+subnet_id = "subnet-0de2146a97523bc6d"
+vpc_id = "vpc-0a938bc9ec57ddb8a"
